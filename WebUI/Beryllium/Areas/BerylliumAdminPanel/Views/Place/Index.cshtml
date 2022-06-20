@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Places>
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Index";
+    int count = 1;
+}
+<div class="col-lg-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Places Table</h4>
+           <a class="btn btn-dark" asp-action="Create">Create Place</a>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Place</th>
+                            <th>Location</th>
+                            <th>Settings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var place in Model)
+                        {
+                            <tr>
+                                <td>@count</td>
+                                <td>@place.Name</td>
+                                <td class="text-danger"> @place.City</td>
+                                <td><label class="badge badge-danger bg-black text-white"><a asp-action="Update" asp-route-id="@place.Id">Edit <i class="mdi mdi-tooltip-edit"></i></a></label></td>
+                                <td><label class="badge badge-danger bg-black"><a asp-action="Delete"asp-route-id="@place.Id">Delete<i class="mdi mdi-delete-sweep"> </i></a></label></td>
+                            </tr>
+                            count++;
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,186 @@
+.myContainer {
+  margin: 0 auto;
+  padding: 0px 180px;
+}
+
+.nav-space {
+  padding: 30px 0px;
+  background-color: white;
+}
+
+.nav-space .myContainer .logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-space .navbar-list {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.nav-space .navbar-list .drpdwn-menu {
+  background-color: black;
+}
+
+.nav-space .navbar-list .drpdwn-menu a {
+  color: white;
+  opacity: 0.5;
+}
+
+.nav-space .navbar-list .drpdwn-menu a:hover {
+  opacity: 1;
+}
+
+.nav-space .navbar-list .drpdwn-menu .square {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: 136px;
+  left: 40px;
+}
+
+.nav-space .navbar-list .drpdwn-menu-second {
+  background-color: black;
+}
+
+.nav-space .navbar-list .drpdwn-menu-second a {
+  color: white;
+  opacity: 0.5;
+}
+
+.nav-space .navbar-list .drpdwn-menu-second a:hover {
+  opacity: 1;
+}
+
+.nav-space .navbar-list .drpdwn-menu-second .square {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: 136px;
+  left: 40px;
+}
+
+#architecture img {
+  width: 1110px;
+  height: 649px;
+}
+
+#architecture .dots {
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#architecture .dots button {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+}
+
+#architecture .slider-text {
+  color: white;
+  width: 220px;
+}
+
+#architecture .slider-text h5 {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+#architecture .control-btn-left {
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  margin-left: 20px;
+  margin-top: 25%;
+}
+
+#architecture .control-btn-right {
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  margin-right: 20px;
+  margin-top: 25%;
+}
+
+#architecture .prev-next {
+  font-size: 32px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#work {
+  padding: 40px 0px 30px 0px;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+#work p {
+  text-align: center;
+  color: gray;
+}
+
+#work .slick {
+  margin-top: 50px;
+}
+
+#work .slick img {
+  height: 284px;
+  width: 344px;
+}
+
+#work .slick .title {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+#work .slick .subtitle {
+  color: gray;
+}
+
+#newsandtestimonials .parts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#newsandtestimonials .parts .part .date {
+  color: gray;
+}
+
+#newsandtestimonials .parts .part a {
+  text-decoration: none;
+  color: gray;
+}
+
+#newsandtestimonials .parts .part h2 {
+  color: #358535;
+}
+
+#newsandtestimonials .parts .part .person {
+  color: gray;
+}
+
+#newsandtestimonials .parts button {
+  background-color: green;
+  color: #053905;
+  border: 0;
+  padding: 12px 23px;
+}
+
+footer {
+  height: 400px;
+  background-color: #161616;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,175 @@
+﻿@model HomeVM
+@using Beryllium.ViewModels
+@{
+    ViewData["Title"] = "Index";
+}
+
+<main>
+    <section id="architecture">
+        <div class="myContainer">
+            <div id="carouselExampleDark"
+                 class="carousel carousel-dark slide"
+                 data-bs-ride="carousel">
+                <div class="carousel-indicators dots">
+                    <button type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"></button>
+                    <button type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="https://demos.freehtml5.co/beryllium/images/slider_1.jpg"
+                             class="d-block w-100"
+                             alt="..." />
+                        <div class="carousel-caption d-none d-md-block slider-text">
+                            <h5>Architecture #1</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://demos.freehtml5.co/beryllium/images/slider_2.jpg"
+                             class="d-block w-100"
+                             alt="..." />
+                        <div class="carousel-caption d-none d-md-block slider-text">
+                            <h5>Architecture #2</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://demos.freehtml5.co/beryllium/images/slider_3.jpg"
+                             class="d-block w-100"
+                             alt="..." />
+                        <div class="carousel-caption d-none d-md-block slider-text">
+                            <h5>Architecture #3</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev control-btn-left"
+                        type="button"
+                        data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                    <i class="fa-solid fa-arrow-left prev-next"></i>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next control-btn-right"
+                        type="button"
+                        data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                    <i class="fa-solid fa-arrow-right prev-next"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="work">
+        <div class="myContainer">
+            <h2>WORK</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                placerat enim <br />
+                et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt
+                volutpat erat.
+            </p>
+            <div class="slick">
+                @foreach (var item in Model.Places)
+                {
+                    <div class="slick-item">
+                        <div class="slick-img">
+                            <img src="https://demos.freehtml5.co/beryllium/images/@item.Image"
+                                 alt="new york arena" />
+                        </div>
+                        <div class="title">@item.Name</div>
+                        <div class="subtitle">@item.City</div>
+                    </div>
+                }
+                @foreach (var item in Model.Places)
+                {
+                    <div class="slick-item">
+                        <div class="slick-img">
+                            <img src="https://demos.freehtml5.co/beryllium/images/@item.Image"
+                                 alt="new york arena" />
+                        </div>
+                        <div class="title">@item.Name</div>
+                        <div class="subtitle">@item.City</div>
+                    </div>
+                }
+               
+            </div>
+        </div>
+    </section>
+    <section id="newsandtestimonials">
+        <div class="myContainer">
+            <div class="parts">
+                <div class="col-6 part">
+                    <div class="title"><h2>News</h2></div>
+                    <div class="news-items">
+                        <div class="news-item">
+                            <div class="date">SEPTEMBER 10, 2016</div>
+                            <div class="name">
+                                <a href="#"><h2>Manila Bridge Re-construction</h2></a>
+                            </div>
+                            <div class="about">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</a>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="date">SEPTEMBER 10, 2016</div>
+                            <div class="name">
+                                <a href="#"><h2>Manila Bridge Re-construction</h2></a>
+                            </div>
+                            <div class="about">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</a>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="date">SEPTEMBER 10, 2016</div>
+                            <div class="name">
+                                <a href="#"><h2>Manila Bridge Re-construction</h2></a>
+                            </div>
+                            <div class="about">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</a>
+                            </div>
+                        </div>
+                        <button>MORE NEWS</button>
+                    </div>
+
+                </div>
+                <div class="col-6 part">
+                    <div class="title"><h2>Testimonials</h2></div>
+                    <div class="testimonials-items">
+                        <div class="testimonial-item">
+                            <div class="about">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.“</p>
+                            </div>
+                            <div class="person">
+                                <p>— John Doe Dueller</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="about">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.“</p>
+                            </div>
+                            <div class="person">
+                                <p>— John Doe Dueller</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="details">
+        <col-4></col-4>
+        <col-4></col-4>
+        <col-4></col-4>
+    </section>
+</main>
